@@ -1,7 +1,6 @@
 # python
 
 示例代码
-
 import sys
 reload(sys)
 sys.setdefaultencoding("utf-8")
@@ -35,3 +34,5 @@ fout.close()
 输出 
 
 	out.txt 
+
+![github](/res/drawable-hdpi/ic_launcher.png) 
