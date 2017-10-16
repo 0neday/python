@@ -36,6 +36,6 @@
 
 	out.txt 
 
-![github](https://github.com/0neday/) 
+[github](https://github.com/0neday/) 
 
 [全球 IPv4 地址归属地数据库](http://www.ipip.net/download.html) 
