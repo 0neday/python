@@ -9,8 +9,15 @@ import os
 from ipip import IP
 from ipip import IPX
 
-IP.load(os.path.abspath("mydata4vipday2.dat"))
-print IP.find("118.28.8.8")
+f = open("jiangsu.txt")
 
-IPX.load(os.path.abspath("mydata4vipday2.datx"))
-print IPX.find("118.28.8.8")
+for line in f:	
+	IP.load(os.path.abspath("17monipdb.dat"))
+	tmpaddress = IP.find(line).split()
+	if len(tmpaddress) == 3:
+		address = tmpaddress[2]
+		if address == '南京':
+			fout = open('out.txt','a') 
+			fout.write(line)
+f.close()
+fout.close()
