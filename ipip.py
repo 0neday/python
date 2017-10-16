@@ -33,8 +33,9 @@ class IP:
         index = IP.index
         offset = IP.offset
         binary = IP.binary
-        nip = inet_aton(ip)
-        ipdot = ip.split('.')
+        tmpip = ip.split('/')[0]
+        nip = inet_aton(tmpip)
+        ipdot = tmpip.split('.')
         if int(ipdot[0]) < 0 or int(ipdot[0]) > 255 or len(ipdot) != 4:
             return "N/A"
 
@@ -81,8 +82,9 @@ class IPX:
         index = IPX.index
         offset = IPX.offset
         binary = IPX.binary
-        nip = inet_aton(ip)
-        ipdot = ip.split('.')
+	tmpip = ip.split('/')[0]
+        nip = inet_aton(tmpip)
+        ipdot = tmpip.split('.')
         if int(ipdot[0]) < 0 or int(ipdot[0]) > 255 or len(ipdot) != 4:
             return "N/A"
 
