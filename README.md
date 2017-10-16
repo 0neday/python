@@ -36,4 +36,4 @@
 
 	out.txt 
 
-![github](/res/drawable-hdpi/ic_launcher.png) 
+![github](https://github.com/0neday/) 
